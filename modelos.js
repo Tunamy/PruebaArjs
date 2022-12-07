@@ -12,7 +12,7 @@ function cargarModelos()
 
     var model = document.createElement('a-box');
 
-    model.setAttribute('material','color.yellow');
+    model.setAttribute('material','color:yellow');
 
     model.setAttribute('scale', '0.5 0.5 0.5');
 
