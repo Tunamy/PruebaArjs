@@ -14,7 +14,7 @@ function cargarModelos()
 
     model.setAttribute('material','color.yellow');
 
-    model.setAttribute('scale', '2 2 2');
+    model.setAttribute('scale', '0.5 0.5 0.5');
 
     model.setAttribute('gps-entity-place', `latitude: ${latitud}; longitude: ${longitud};`);
 
