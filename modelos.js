@@ -6,18 +6,47 @@ window.onload = () =>
 
 function cargarModelos()
 {
+    let modelos = 
+    [
+        {
+            latitud: 37.19219021640692,
+            longitud: -3.6173989106522724,
+            color: "yellow",
+            escala: 0.2
+        },
+
+        {
+             latitud: 37.19219021640692,
+             longitud: -3.6173989106522724,
+             color: "yellow",
+             escala: 0.2
+        },
+
+        {
+             latitud: 37.19219021640692,
+             longitud: -3.6173989106522724,
+             color: "yellow",
+             escala: 0.2
+        },
+       
+    ]
+}
     
-    let latitud: 37.19219021640692,
-    let longitud: -3.6173989106522724,
+    //let latitud: 37.19219021640692,
+    //let longitud: -3.6173989106522724,
 
-    var model = document.createElement('a-box');
+    for(let i = 0; i<modelos.length; i++)
+    {
 
-    model.setAttribute('material','color:yellow');
+        var model = document.createElement('a-box');
 
-    model.setAttribute('scale', '0.5 0.5 0.5');
+        model.setAttribute('material','color:'+modelos.[i].color);
 
-    model.setAttribute('gps-entity-place', `latitude: ${latitud}; longitude: ${longitud};`);
+        model.setAttribute('scale', '0.5 0.5 0.5');
 
-    let scene = document.querySelector('a-scene');
-    scene.appendChild(model);
+        model.setAttribute('gps-entity-place', `latitude: ${modelos.[i].latitud}; longitude: ${modelos.[i].longitude};`);
+
+        let scene = document.querySelector('a-scene');
+        scene.appendChild(model);
+    }
 }
