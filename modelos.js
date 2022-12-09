@@ -1,6 +1,13 @@
 // JavaScript source code
 window.onload = () => 
 {
+
+    let camara = document.querySelector('a-camera');
+    camera.addEventListener('gps-camera-update-positon',()=>
+    {
+        let div = document.getElementById('mensaje');
+        div.innerHTML = "prueba";
+    }
     cargarModelos()     
 };
 
@@ -12,21 +19,21 @@ function cargarModelos()
             latitud: 37.192249,
             longitud: -3.616615,
             color: "yellow",
-            escala: 0.2
+            
         },
 
         {
              latitud: 37.192249,
              longitud: -3.616615,
              color: "yellow",
-             escala: 0.2
+             
         },
 
         {
              latitud: 37.192249,
              longitud: -3.616615,
              color: "yellow",
-             escala: 0.2
+             
         },
        
     ];
