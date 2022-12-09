@@ -4,7 +4,7 @@ window.onload = () =>
 {
 
     let camara = document.querySelector('a-camera');
-    camera.addEventListener('gps-camera-update-positon',()=>
+    camara.addEventListener('gps-camera-update-positon',()=>
     {
         let div = document.getElementById('mensaje');
         div.innerHTML = "prueba";
@@ -43,7 +43,7 @@ function cargarModelos()
     //let latitud: 37.19219021640692,
     //let longitud: -3.6173989106522724,
 
-    for(let i = 0; i<modelos.length; i++)
+    for(var i = 0; i<modelos.length; i++)
     {
 
         var model = document.createElement('a-box');
@@ -54,7 +54,7 @@ function cargarModelos()
 
         model.setAttribute('gps-entity-place', `latitude: ${modelos[i].latitud}; longitude: ${modelos[i].longitude};`);
 
-        let scene = document.querySelector('a-scene');
+        var scene = document.querySelector('a-scene');
         scene.appendChild(model);
     }
 }
