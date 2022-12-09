@@ -44,7 +44,7 @@ function cargarModelos()
 
         model.setAttribute('scale', '0.2 0.2 0.2');
 
-        model.setAttribute('gps-entity-place', `latitude: ${modelos.[i].latitud}; longitude: ${modelos.[i].longitude};`);
+        model.setAttribute('gps-entity-place', `latitude: ${modelos[i].latitud}; longitude: ${modelos[i].longitude};`);
 
         let scene = document.querySelector('a-scene');
         scene.appendChild(model);
