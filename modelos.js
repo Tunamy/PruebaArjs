@@ -8,9 +8,9 @@ window.onload = () =>
     {
         let div = document.getElementById('mensaje');
         div.innerHTML = "prueba";
-    }
+    })
     cargarModelos()     
-});
+};
 
 function cargarModelos()
 {
