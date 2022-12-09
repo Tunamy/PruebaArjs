@@ -10,7 +10,7 @@ window.onload = () =>
         div.innerHTML = "prueba";
     }
     cargarModelos()     
-};
+});
 
 function cargarModelos()
 {
