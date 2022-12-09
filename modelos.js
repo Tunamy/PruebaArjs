@@ -3,13 +3,13 @@
 window.onload = () => 
 {
 
-    let camara = document.querySelector('a-camera');
-    camara.addEventListener('gps-camera-update-positon',()=>
-    {
-        let div = document.getElementById('mensaje');
-        div.innerHTML = "prueba";
-    })
-    cargarModelos()     
+    //let camara = document.querySelector('a-camera');
+    //camara.addEventListener('gps-camera-update-positon',()=>
+    //{
+    //    let div = document.getElementById('mensaje');
+    //    div.innerHTML = "prueba";
+    //})
+    cargarModelos()    
 };
 
 function cargarModelos()
