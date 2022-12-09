@@ -29,7 +29,7 @@ function cargarModelos()
              escala: 0.2
         },
        
-    ]
+    ];
 }
     
     //let latitud: 37.19219021640692,
@@ -42,7 +42,7 @@ function cargarModelos()
 
         model.setAttribute('material','color:'+modelos.[i].color);
 
-        model.setAttribute('scale', '0.5 0.5 0.5');
+        model.setAttribute('scale', '0.2 0.2 0.2');
 
         model.setAttribute('gps-entity-place', `latitude: ${modelos.[i].latitud}; longitude: ${modelos.[i].longitude};`);
 
