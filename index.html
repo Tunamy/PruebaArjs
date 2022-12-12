@@ -20,93 +20,21 @@
     >
       <a-text
 
-        value="This content will always face you."
+        value="IES FRANCISCO AYALA."
         look-at="[gps-camera]"
-        scale="70 70 70"
-        gps-entity-place="latitude: 37.19219021640692; longitude: -3.6173989106522724;" 
+        scale="50 50 50"
+        gps-entity-place="latitude: 37.195844; longitude: -3.608128;" 
         
       ></a-text>
 
-     <!-- <a-assets>
-    <img id="image" src="image.jpeg" gps-entity-place="latitude: 37.19219021640692; longitude: -3.6173989106522724;">
-    </a-assets>-->
-      
-
-      <!-- <a-box material="color: yellow" gps-entity-place="latitude: 37.19219021640692; longitude: -3.6173989106522724"/>
-
-      <a-entity gps-entity-place="latitude: 37.19203266750125; longitude: -3.6168726103983997;" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.0005 0.0005 0.0005"/>
-      <a-entity gps-entity-place="latitude: 37.191957879667974; longitude: -3.6167711418611743;" gltf-model="./assets/articuno/scene.gltf" rotation="0 180 0" animation-mixer scale="0.0005 0.0005 0.0005"/>
-      <a-entity gps-entity-place="latitude: 37.19190273303553; longitude: -3.6169190772986872;" gltf-model="./assets/dragonite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.0005 0.0005 0.0005"/>
-
-      <a-box material="color: yellow" gps-entity-place="latitude: 37.19190273303553; longitude: -3.6169190772986872"/>  -->
+    
 
       <a-camera id='camera1' look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-camera='gpsMinDistance: 5' rotation-reader> </a-camera> 
 
 
     </a-scene>
 
-    <script>
-    window.onload = () => 
-{
-
-    //let camara = document.querySelector('a-camera');
-    //camara.addEventListener('gps-camera-update-positon',()=>
-    //{
-    //    let div = document.getElementById('mensaje');
-    //    div.innerHTML = "prueba";
-    //})
-    cargarModelos()    
-};
-
-function cargarModelos()
-{
-    let modelos = 
-    [
-        {
-            latitud: 37.192249,
-            longitud: -3.616615,
-            color: "yellow",
-            
-        },
-
-        {
-             latitud: 37.192249,
-             longitud: -3.616615,
-             color: "yellow",
-             
-        },
-
-        {
-             latitud: 37.192249,
-             longitud: -3.616615,
-             color: "yellow",
-             
-        },
-
-       
-    ];
-    for(var i = 0; i<modelos.length; i++)
-    {
-
-        var model = document.createElement('a-box');
-
-        model.setAttribute('material','color:'+modelos[i].color);
-
-        model.setAttribute('scale', '0.2 0.2 0.2');
-
-        model.setAttribute('gps-entity-place', `latitude: ${modelos[i].latitud}; longitude: ${modelos[i].longitude};`);
-
-        var scene = document.querySelector('a-scene');
-        scene.appendChild(model);
-    }
-}
-    
-    //let latitud: 37.19219021640692,
-    //let longitud: -3.6173989106522724,
-
-    
-
-    </script>
+ 
   </body>
 
 </html>
